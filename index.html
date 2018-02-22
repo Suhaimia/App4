@@ -45,6 +45,39 @@ blah, blah, blah, blah
 
 	<div data-role="footer">
 		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		
+	<a href="#pagetwo" data-role="button">Go to Page Two</a>
+	
+	<div data-role="content">	
+		<p>Are your eyes watery or itchy?</p>
+		<a href="#pagetwo" data-role="button">Yes</a>
+		<a href="#pagetwo" data-role="button">No</a>
+		
+	<div data-role="content">
+        <p>Are your eyes watery or itchy?</p>    
+	<a href="#page3"  onclick="allergyAdd();" data-role="button"> Yes</a>
+        <a href="#page3"  onclick="coldAdd();" data-role="button">No</a>
+    	
+		 <script>
+        var allergy_count = 0;
+        var cold_count = 0;
+
+        function allergyAdd(){
+            allergy_count = allergy_count + 1;
+        }
+
+        function coldAdd(){
+            cold_count = cold_count + 1;
+        }
+
+	<p id="results"></p>
+	var resultText = document.getElementById("results");
+	<p id="results"></p> tags with the innerHTML command like this:
+	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+
+  	      </script>
+	    </div><!-- /content -->
+	  </div><!-- /content -->
 	</div><!-- /footer -->
      </div><!-- /page -->
    </body>
