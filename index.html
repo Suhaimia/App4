@@ -44,7 +44,11 @@ blah, blah, blah, blah
 
 	<div data-role="footer">
 		<p>I will help diagnose whether you have a cold or an allergy.</p>
-		
+	
+	$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+
 	<a href="#pagetwo" data-role="button">Go to Page Two</a>
 	
 	<div data-role="content">	
@@ -79,6 +83,8 @@ blah, blah, blah, blah
 	  </div><!-- /content -->
 	</div><!-- /footer -->
      </div><!-- /page -->
+      });
+});
    </body>
   </head>
 </html>
