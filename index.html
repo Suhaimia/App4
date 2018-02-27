@@ -37,10 +37,12 @@ blah, blah, blah, blah
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
+		println(allergy_count);
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
+		println(cold_count);
         }
 
 	<p id="results"></p>
@@ -81,8 +83,8 @@ blah, blah, blah, blah
 	<div data-role="content">
 		
 		<p>Are your eyes watery or itchy?</p>
-		<a href="#pagethree" data-role="button">Yes</a>
-		<a href="#pagethree" data-role="button">No</a>
+		<a href="#pagethree" onclick="allergyAdd();" data-role="button">Yes</a>
+		<a href="#pagethree" onclick="coldAdd();" data-role="button">No</a>
 		
 		
 	</div><!-- /content -->
