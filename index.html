@@ -30,38 +30,8 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
       <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
-   
-   <body> 
-
-     <div data-role="page">
-	<div data-role="header">
-		<h1>My Hello World App!</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>Hello World! Suhaimia is here.</p>		
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
-	
-	$(document).ready(function(){
-    $("p").click(function(){
-        $(this).hide();
-
-	<a href="#pagetwo" data-role="button">Go to Page Two</a>
-	
-	<div data-role="content">	
-		<p>Are your eyes watery or itchy?</p>
-		<a href="#pagetwo" data-role="button">Yes</a>
-		<a href="#pagetwo" data-role="button">No</a>
-		
-	<div data-role="content">
-        <p>Are your eyes watery or itchy?</p>    
-	<a href="#page3"  onclick="allergyAdd();" data-role="button"> Yes</a>
-        <a href="#page3"  onclick="coldAdd();" data-role="button">No</a>
-    	
-		 <script>
+	   
+	    <script>
         var allergy_count = 0;
         var cold_count = 0;
 
@@ -79,12 +49,74 @@ blah, blah, blah, blah
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 
   	      </script>
-	    </div><!-- /content -->
-	  </div><!-- /content -->
+	  
+
+   <body> 
+
+     <div data-role="page" id="pageone">
+	<div data-role="header">
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>Hello World! Suhaimia is here.</p>
+		<a href="#pagetwo" data-role="button">Go to Page Two</a>
+		
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<p>I will help diagnose whether you have a cold or an allergy.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
-      });
-});
+	   
+	   
+	   
+     <div data-role="page" id="pagetwo">
+	<div data-role="header">
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>Are your eyes watery or itchy?</p>
+		<a href="#pagethree" data-role="button">Yes</a>
+		<a href="#pagethree" data-role="button">No</a>
+		
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<p>I will help diagnose whether you have a cold or an allergy.</p>
+	</div><!-- /footer -->
+     </div><!-- /page -->
+
+	   
+	   
+	   
+	   
+	      <div data-role="page" id="pagethree">
+	<div data-role="header">
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>Are your eyes watery or itchy?</p>
+		<a href="#pagethree" data-role="button">Yes</a>
+		<a href="#pagethree" data-role="button">No</a>
+		
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<p>I will help diagnose whether you have a cold or an allergy.</p>
+	</div><!-- /footer -->
+     </div><!-- /page -->
+	
+
+
    </body>
   </head>
 </html>
