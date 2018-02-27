@@ -34,14 +34,24 @@ blah, blah, blah, blah
 	    <script>
         var allergy_count = 0;
         var cold_count = 0;
+		var allergyPercent;
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
         }
+		    
+		function allergyPercent(){
+			allergyPercent = allergy_count/(allergy_count+cold_count);
+		}
 
         function coldAdd(){
             cold_count = cold_count + 1;
-        }
+		}
+		
+		function coldPercent(){
+			cold_count/(allergy_count+cold_count);
+		}
+        
 
 	var resultText = document.getElementById("results");
 		 
@@ -147,8 +157,8 @@ blah, blah, blah, blah
 	<div data-role="content">
 		
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#pagesix" data-role="button">Yes</a>
-		<a href="#pagesix" data-role="button">No</a>
+		<a href="#pagesix" onclick="allergyPercent(); coldPercent();" data-role="button">Yes</a>
+		<a href="#pagesix" onclick="allergyPercent(); coldPercent();" data-role="button">No</a>
 		
 		
 	</div><!-- /content -->
