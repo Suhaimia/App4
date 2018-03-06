@@ -36,6 +36,8 @@ No known issues.
         var cold_count = 0; //variable that counts cold answers
 		var allergyPercent; //variable that calculates the allergy results
 		var coldPercent; //variable that calculates the cold results
+			var calculate_allergyPercent;
+			var calculate_coldPercent;
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -43,6 +45,7 @@ No known issues.
 		    
 		function calculate_allergyPercent(){
 			return (allergy_count/4)*100
+			
 		} //function that calculates the percentage of allergy related responses
 
         function coldAdd(){
