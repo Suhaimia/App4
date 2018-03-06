@@ -36,27 +36,28 @@ No known issues.
         var cold_count = 0; //variable that counts cold answers
 		var allergyPercent; //variable that calculates the allergy results
 		var coldPercent; //variable that calculates the cold results
-	var resultText;
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
         } //function that calculates the number of allergy related responses
 		    
-		function allergyPercent(){
-			allergyPercent = allergy_count/(allergy_count+cold_count);
+		function calculate_allergyPercent(){
+			return (allergy_count/4)*100
 		} //function that calculates the percentage of allergy related responses
 
         function coldAdd(){
             cold_count = cold_count + 1;
 		} //function that calculates the number of cold related responses
 		
-		function coldPercent(){
-			coldPercent = cold_count/(allergy_count+cold_count);
+		function calculate_coldPercent(){
+			return (cold_count/4)*100
+			
 		} //function that calculates the percentage of cold related responses
         
-
+	function resultsoutput(){
+		allergyPercent=calculate_allegyPercent();
+		coldPercent= 
 	var resultText = document.getElementById("results");
-		 
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 
   	      </script>
@@ -179,6 +180,7 @@ No known issues.
 
 	<div data-role="content">
 		
+		<a onclick="resultsoutput"();" data-role="button">Results </a>
 		<p id="Results"></p>
 		
 	</div><!-- /content -->
