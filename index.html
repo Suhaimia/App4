@@ -56,7 +56,7 @@ No known issues.
         
 	function resultsoutput(){
 		allergyPercent=calculate_allegyPercent();
-		coldPercent= 
+		coldPercent=calculate_coldPercent();
 	var resultText = document.getElementById("results");
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 
@@ -180,7 +180,7 @@ No known issues.
 
 	<div data-role="content">
 		
-		<a onclick="resultsoutput"();" data-role="button">Results </a>
+		<a onclick="resultsoutput"();" data-role="button">Click Here for Results </a>
 		<p id="Results"></p>
 		
 	</div><!-- /content -->
