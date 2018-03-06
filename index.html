@@ -44,7 +44,7 @@ No known issues.
         } //function that calculates the number of allergy related responses
 		    
 		function calculate_allergyPercent(){
-			return (allergy_count/4)*100
+			return (allergy_count/4)*100;
 			
 		} //function that calculates the percentage of allergy related responses
 
@@ -53,7 +53,7 @@ No known issues.
 		} //function that calculates the number of cold related responses
 		
 		function calculate_coldPercent(){
-			return (cold_count/4)*100
+			return (cold_count/4)*100;
 			
 		} //function that calculates the percentage of cold related responses
         
@@ -61,7 +61,7 @@ No known issues.
 		allergyPercent=calculate_allegyPercent();
 		coldPercent=calculate_coldPercent();
 	var resultText = document.getElementById("Results");
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "% <br> Probability it is a cold =" + coldPercent + "%";
 
   	      </script>
 	  
