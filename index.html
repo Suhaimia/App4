@@ -24,7 +24,7 @@ No known issues.
 -->
 
    <head> 
-      <title>Hello World</title>  
+      <title>Cold or Allergy?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -44,15 +44,15 @@ No known issues.
 		    
 		function allergyPercent(){
 			allergyPercent = allergy_count/(allergy_count+cold_count);
-		}
+		} //function that calculates the percentage of allergy related responses
 
         function coldAdd(){
             cold_count = cold_count + 1;
-		}
+		} //function that calculates the number of cold related responses
 		
 		function coldPercent(){
 			coldPercent = cold_count/(allergy_count+cold_count);
-		}
+		} //function that calculates the percentage of cold related responses
         
 
 	var resultText = document.getElementById("results");
@@ -180,8 +180,6 @@ No known issues.
 	<div data-role="content">
 		
 		<p id="Results"></p>
-		<a "Probability it is allergies =" + allergyPercent; a>
-		<a "Probability it is a cold =" + coldPercent; a>
 		
 	</div><!-- /content -->
 
