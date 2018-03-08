@@ -17,14 +17,14 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-To determine whether the person has a cold or allergy.
+To determine whether the person has asthma or bronchitis.
  
 Known Issues:
 No known issues.
 -->
 
    <head> 
-      <title>Cold or Allergy?</title>  
+      <title>Asthma or Bronchitis?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -32,34 +32,34 @@ No known issues.
       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 	   
 	    <script>
-        var allergy_count = 0; //variable that counts allergy answers
-        var cold_count = 0; //variable that counts cold answers
-		var allergyPercent = 0; //variable that calculates the allergy results
-		var coldPercent = 0; //variable that calculates the cold results
+        var bronchitis_count = 0; //variable that counts bronchitis answers
+        var asthma_count = 0; //variable that counts asthma answers
+		var bronchitisPercent = 0; //variable that calculates the bronchitis results
+		var asthmaPercent = 0; //variable that calculates the asthma results
 
         function bronchitisAdd(){
-            allergy_count = allergy_count + 1;
-        } //function that calculates the number of allergy related responses
+            bronchitis_count = bronchitis_count + 1;
+        } //function that calculates the number of bronchitis related responses
 		    
-		function calculate_allergyPercent(){
-			return (allergy_count/4)*100;
+		function calculate_bronchitisPercent(){
+			return (bronchitis_count/4)*100;
 			
-		} //function that calculates the percentage of allergy related responses
+		} //function that calculates the percentage of bronchitis related responses
 
         function asthmaAdd(){
-            cold_count = cold_count + 1;
-		} //function that calculates the number of cold related responses
+            asthma_count = asthma_count + 1;
+		} //function that calculates the number of asthma related responses
 		
-		function calculate_coldPercent(){
-			return (cold_count/4)*100;
-			
-		} //function that calculates the percentage of cold related responses
+		function calculate_asthmaPercent(){
+			return (asthma_count/4)*100;
+		
+		} //function that calculates the percentage of asthma related responses
         
 	function resultsoutput(){
-		allergyPercent=calculate_allergyPercent();
-		coldPercent=calculate_coldPercent();
+		bronchitisPercent=calculate_bronchitisPercent();
+		asthmaPercent=calculate_asthmaPercent();
 	var resultText = document.getElementById("Results")
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "% <br> Probability it is a cold =" + coldPercent + "%";
+	resultText.innerHTML = "Probability it is bronchitis =" + bronchitisPercent + "% <br> Probability it is a asthma =" + asthmaPercent + "%";
 	}
   	      </script>
 	  
@@ -68,7 +68,7 @@ No known issues.
 
      <div data-role="page" id="pageone">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -88,7 +88,7 @@ No known issues.
 	   
      <div data-role="page" id="pagetwo">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -112,7 +112,7 @@ No known issues.
 	   
 	      <div data-role="page" id="pagethree">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -133,7 +133,7 @@ No known issues.
 	   
 	    <div data-role="page" id="pagefour">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -155,7 +155,7 @@ No known issues.
 	   
 	   	    <div data-role="page" id="pagefive">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -174,9 +174,9 @@ No known issues.
 	   
 	 
 	   	   
-	   	    <div data-role="page" id="pagesix">
+	     <div data-role="page" id="pagesix">
 	<div data-role="header">
-		<h1>My Hello World App!</h1>
+		<h1>My Diagnostic App!</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" class="ui-btn">
