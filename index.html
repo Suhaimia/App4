@@ -37,7 +37,7 @@ No known issues.
 		var allergyPercent = 0; //variable that calculates the allergy results
 		var coldPercent = 0; //variable that calculates the cold results
 
-        function allergyAdd(){
+        function bronchitisAdd(){
             allergy_count = allergy_count + 1;
         } //function that calculates the number of allergy related responses
 		    
@@ -46,7 +46,7 @@ No known issues.
 			
 		} //function that calculates the percentage of allergy related responses
 
-        function coldAdd(){
+        function asthmaAdd(){
             cold_count = cold_count + 1;
 		} //function that calculates the number of cold related responses
 		
@@ -80,7 +80,7 @@ No known issues.
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>I will help diagnose whether you have Asthma or Bronchitis.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 	   
@@ -93,15 +93,16 @@ No known issues.
 
 	<div data-role="content">
 		
-		<p>Are your eyes watery or itchy?</p>
-		<a href="#pagethree" onclick="allergyAdd();" data-role="button">Yes</a>
-		<a href="#pagethree" onclick="coldAdd();" data-role="button">No</a>
+		<p>Do you produce a thick, goopy substance called mucus when you cough?</p>
+		<a href="#pagethree" onclick="bronchitisAdd();" data-role="button">Yes</a>
+		<a href="#pagethree" onclick="asthmaAdd();" data-role="button">No</a>
+		
 		
 		
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>Please proceed to the next page.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 
@@ -116,15 +117,14 @@ No known issues.
 
 	<div data-role="content">
 		
-		<p>Do you have a fever?</p>
-		<a href="#pagefour" onclick="allergyAdd();" data-role="button">No</a>
-		<a href="#pagefour" onclick="coldAdd();" data-role="button">Yes</a>
-		
+		<p>Do you have a low fever (a temperature of 100°F-102°F), chills, or body aches?</p>
+		<a href="#pagefour" onclick="bronchitisAdd();" data-role="button">Yes</a>
+		<a href="#pagefour" onclick="asthmaAdd();" data-role="button">No</a>
 		
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>Please proceed to the next page.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 	   
@@ -138,15 +138,15 @@ No known issues.
 
 	<div data-role="content">
 		
-		<p>Do you have a sore throat?</p>
-		<a href="#pagefive" onclick="allergyAdd();" data-role="button">No</a>
-		<a href="#pagefive" onclick="coldAdd();" data-role="button">Yes</a>
+		<p>Does the cough, chest tightness, and wheezing usually last for a few days to a few weeks?</p>
+		<a href="#pagefive" onclick="bronchitisAdd();" data-role="button">Yes</a>
+		<a href="#pagefive" onclick="asthmaAdd();" data-role="button">No</a>
 		
 		
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>Please proceed to the next page.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 	   
@@ -160,14 +160,14 @@ No known issues.
 
 	<div data-role="content">
 		
-		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#pagesix" onclick="allergyAdd();" data-role="button">Yes</a>
-		<a href="#pagesix" onclick="coldAdd();" data-role="button">No</a>
+		<p>Are your symptoms triggered by certain events, such as exercise, allergies, or your workplace?</p>
+		<a href="#pagefive" onclick="asthmaAdd();" data-role="button">Yes</a>
+		<a href="#pagefive" onclick="bronchitisAdd();" data-role="button">No</a>
 		
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>Please proceed to the next page.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 	
@@ -187,7 +187,7 @@ No known issues.
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<p>I will help diagnose whether you have a cold or an allergy.</p>
+		<p>Your results are displayed above.</p>
 	</div><!-- /footer -->
      </div><!-- /page -->
 
